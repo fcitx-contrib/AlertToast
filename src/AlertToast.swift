@@ -373,6 +373,7 @@ public struct AlertToast: View{
                 }
                 if subTitle != nil{
                     Text(LocalizedStringKey(subTitle ?? ""))
+                        .fixedSize(horizontal: false, vertical: true)
                         .font(style?.subTitleFont ?? Font.footnote)
                         .opacity(0.7)
                         .multilineTextAlignment(.center)
